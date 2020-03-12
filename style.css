@@ -98,6 +98,34 @@ i:hover{
   100%  { background-color: #ccc; }
 }
 
+/*.skillcard{
+	display: flex;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 35px;
+}*/
+/*#skillbackground{
+	width: 100%;
+	background-color: rgba(0,0,0,0.2);
+	height: 280px;
+	margin-top: 50px;
+}
+.skills{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+.skillimg{
+	max-height: 70px;
+}
+.skillcard p{
+	font-size: 30px;
+}*/
 /*@media(max-width: 800px)
 {
 
