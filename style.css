@@ -1,6 +1,8 @@
 body{
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	justify-content: center;
 	height: 100vh;
 }
 #particles-js
@@ -24,12 +26,7 @@ body{
 			transform: translate(-50%,-50%,0);
 
 		}
-body{
-	text-align: center;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-}	
+	
 h1{
 	color: #fff;
 	font-size: 60px;
@@ -99,7 +96,13 @@ i:hover{
 }
 @media(max-width: 1000px)
 {
-
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	justify-content: center;
+	height: 110vh;
+}
 h1{
 	margin-top: 22px;
 	width: 100%;
