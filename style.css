@@ -102,15 +102,15 @@ i:hover{
 
 h1{
 	margin-top: 22px;
-	font-size: 45px;
+	font-size: 40px;
 	margin-bottom: 20px;
 }	
 i{
-	font-size: 40px;
+	font-size: 35px;
 	margin: 8px 18px;
 }
 i:hover{
-	font-size: 45px;
+	font-size: 40px;
 	margin: 5px 14px;
 }
 .container p {
@@ -120,10 +120,12 @@ i:hover{
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .profile{
-	height: 230px;
-	width: 230px;
+	height: 220px;
+	width: 220px;
 	border-radius: 200px;
 	margin-bottom: 3px;
 }
