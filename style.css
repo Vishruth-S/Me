@@ -41,6 +41,9 @@ h2{
 	font-size: 40px;
 	margin-bottom: 10px;
 	font-family: 'Montserrat', sans-serif;
+	/* animation-name: fadeInUp;
+	animation-duration: 1s;
+	animation-fill-mode: both; */
 }
 a{
 	text-decoration: none;
@@ -213,7 +216,9 @@ h1{
     /* left: 0; */
     position: fixed;
     z-index: 100;
-    width: 100%;
+	width: 100%;
+	animation-name: fadeInDown;
+	animation-duration: 0.7s;
 }
 
 .underline {
