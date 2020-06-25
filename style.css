@@ -63,7 +63,8 @@ a{
 }
 .profiletext{
 	margin-top: 10px;
-	font-family: 'Amatic SC', cursive;
+	/* font-family: 'Amatic SC', cursive; */
+	font-family: 'Dosis', sans-serif;
 	font-size: 18px;
 }
 .container {
