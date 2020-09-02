@@ -27,7 +27,7 @@
       <h1>Hi, I'm <span style="color: rgb(235, 83, 145);">Vishruth S</span></h1>
       <!-- <h2>Developer | Coder | Hacker</h2>  -->
       <!-- <img class="profile" src="profile.jpg"> -->
-      <div class="container">
+      <div class="containertype">
         <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
       </div>
 
@@ -83,7 +83,7 @@
   <div class="skills" id="portfolio">
     <h2 class="wow animate__animated animate__fadeInLeft">SKILLS</h2>
     <hr class="underline">
-    <div class="row ">
+    <div class="row main-row">
       <div class="col-md-4 col-6 leftcol">
         <img class="logo wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"
           src="./Assets/svg/javascript.svg">
@@ -126,7 +126,7 @@
   <div class="projects">
     <h2 class="wow animate__animated animate__fadeInDown">PROJECTS</h2>
     <hr class="underline mb-5">
-    <div class="row prorow">
+    <div class="row prorow main-row">
       <div class="col-md-7 col-12 procol">
         <img class="proimg wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s"
           src="./Assets/img/eatssy3.png">
@@ -177,10 +177,44 @@
       <a href="https://github.com/Vishruth-S" style="color: rgb(235, 83, 145); text-decoration: underline;">Github</a>
       page</p>
   </div>
-  <!-- <div>
-      <h2>Blog</h2>
+  <section>
+    <div>
+      <h2 class="blog-section-head">BLOG</h2>
       <hr class="underline">
-    </div> -->
+    </div>
+    <div class="container blog-container">
+      <div class="row blog-row">
+        <div class=" col-12 col-md-4 blog-item">
+          <a href="#">
+            <img src="Assets/img/Blog1.png" class="blog-img">
+            <h4 class="blog-head">Best VSCode extendsions for Web-developers</h4>
+            <p class="blog-date">December 06, 2019</p></i>
+            <hr class="underline-blog">
+            <p>Visual Studio Code (VSCode) is one of the most popular code editor used by developers. Whether you are a
+              full-time web developer working with large codebases or just someone...</p>
+          </a>
+        </div>
+        <div class=" col-12 col-md-4 col-12 blog-item">
+          <a href="#">
+            <img src="Assets/img/Blog2.png" class="blog-img">
+            <h4 class="blog-head">Add Contact forms to static websites</h4>
+            <p class="blog-date">September 02, 2020</p>
+            <hr class="underline-blog">
+            <p>So lets say you've got yourself a static portfolio website (maybe on Github pages). Won't it be nice if
+              you
+              can add a nice "Contact me" form so that people can connect with you easier?...</p>
+          </a>
+        </div>
+        <!-- <div class="col-md-4">
+          <img src="Assets/img/Blog2.png" class="blog-img">
+          <h3>Blog 1</h3>
+          <p>date</p>
+          <hr>
+          <p>Blog text</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
   <section class="vshape">
   </section>
   <section class="footer" id="contact">
@@ -193,7 +227,7 @@
 
         <form class="wow animate__animated animate__zoomIn" name="gform" id="gform"
           action="https://docs.google.com/forms/d/e/1FAIpQLSf9meFS8unZ_pRCTbajquKwtfGv33E-xyvGzYXyNX_WRNjZ0A/formResponse?"
-          target="hidden_iframe" onsubmit="validateForm()" data-wow-duration="1s" data-wow-delay="1s">
+          target="hidden_iframe" onsubmit="validateForm(); submitted=true;" data-wow-duration="1s" data-wow-delay="1s">
           <div>
             <input type="text" class="form-item" name="entry.1327340035" id="entry.1327340035" placeholder="Name"
               required>

@@ -67,11 +67,11 @@ a{
 	font-family: 'Dosis', sans-serif;
 	font-size: 18px;
 }
-.container {
+.containertype {
   justify-content: center;
   align-items: center;
 }
-.container p {
+.containertype p {
   font-size: 3rem;
   padding: 0.5rem;
   font-weight: bold;
@@ -79,21 +79,21 @@ a{
   text-align: center;
   overflow: hidden;
 }
-.container p span.typed-text {
+.containertype p span.typed-text {
   font-weight: normal;
   color: #00ffff;
   /* font-family: 'Teko', sans-serif; */
   /* font-family: 'Roboto Mono', monospace; */
   font-family: 'Source Code Pro', monospace;
 }
-.container p span.cursor {
+.containertype p span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
 }
-.container p span.cursor.typing {
+.containertype p span.cursor.typing {
   animation: none;
 }
 @keyframes blink {
@@ -132,7 +132,7 @@ h1{
 	margin-bottom: 20px;
 }	
 
-.container p {
+.containertype p {
   font-size: 1.6rem;
   padding: 0.5rem;
   font-weight: bold;
@@ -177,7 +177,7 @@ h1{
 		margin-bottom: 20px;
 	}	
 	
-	.container p {
+	.containertype p {
 	  font-size: 1.2rem;
 	  padding: 0.5rem;
 	  font-weight: bold;
@@ -243,11 +243,53 @@ h1{
 	height: 250px;
 	width: 450px;
 }
-.row{
+.main-row{
 	margin-left: 120px;
 	margin-right: 120px;
 }
 
+.blog-section-head {
+	margin-top: 30px;
+}
+
+.blog-container {
+	text-align: left;
+}
+
+.blog-img {
+	width: 90%;
+}
+
+.blog-row {
+	margin: 0px 40px;
+}
+
+.underline-blog {
+	border: 3px solid #04c2c9;
+	width: 30px;
+	margin-left: 0;
+}
+
+.blog-date {
+	font-style: italic;
+}
+
+.blog-head {
+	margin-top: 12px;
+}
+
+.blog-item {
+	margin: 0 10px;
+}
+
+.blog-item>a {
+	color: black;
+}
+.blog-item>a:hover {
+	color: black;
+	opacity: 0.6;
+	transition: 0.5s;
+}
 /* .leftcol{
 	text-align: right;
 }
