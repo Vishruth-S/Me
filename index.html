@@ -24,7 +24,7 @@
 <body>
   <div id="particles-js">
     <div class="main-title" id="home">
-      <h1>Hi, I'm <span style="color: rgb(235, 83, 145);">Vishruth S</span></h1>
+      <h1>Hi, I'm <span style="color: #00ffff">Vishruth S</span></h1>
       <!-- <h2>Developer | Coder | Hacker</h2>  -->
       <!-- <img class="profile" src="profile.jpg"> -->
       <div class="containertype">
@@ -60,9 +60,9 @@
         <li class="nav-item">
           <a class="nav-link" dest="portfolio" href="#portfolio">PORTFOLIO</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" dest="blog" href="#">BLOG</a>
-        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" dest="blog" href="#blog">BLOG</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" dest="contact" href="#contact">CONTACT</a>
         </li>
@@ -213,7 +213,10 @@
     <a href="https://github.com/Vishruth-S" style="color: rgb(235, 83, 145); text-decoration: underline;">Github</a>
     for more projects</p>
   </div>
-  <section>
+
+  <!-- BLOG -->
+
+  <section id="blog">
     <div>
       <h2 class="blog-section-head wow animate__animated animate__fadeInDown">BLOG</h2>
       <hr class="underline">
@@ -398,20 +401,20 @@
       }
       lastPos = pos;
 
-      if (pos2 > $('#home').offset().top) {
+      if (pos2 >= $('#home').offset().top) {
         highlightLink('home');
       }
-      if (pos2 > $('#about').offset().top) {
+      if (pos2 >= $('#about').offset().top) {
         highlightLink('about');
       }
-      if (pos2 > $('#portfolio').offset().top) {
+      if (pos2 >= $('#portfolio').offset().top) {
         highlightLink('portfolio');
       }
-      // if (pos2 > $('#blog').offset().top) {
-      //   highlightLink('blog');
-      // }
+      if (pos2 >= $('#blog').offset().top) {
+        highlightLink('blog');
+      }
       if (
-        pos2 > $('#contact').offset().top ||
+        pos2 >= $('#contact').offset().top ||
         pos + $(window).height() === $(document).height()
       ) {
         highlightLink('contact');
