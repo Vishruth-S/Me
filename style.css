@@ -251,6 +251,7 @@ a {
 .underline {
 	width: 8%;
 	border: 3px solid #04c2c9;
+	background-color: #04c2c9;
 	margin-bottom: 40px;
 }
 
@@ -290,6 +291,7 @@ a {
 .underline-blog {
 	border: 3px solid #04c2c9;
 	width: 30px;
+	background-color: #04c2c9;
 	margin-left: 0;
 }
 
