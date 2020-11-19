@@ -529,6 +529,15 @@ a:hover {
 	border-radius: 8px;
 }
 
+.github-btn {
+	background: #eb5391;
+	margin-top: 20px;
+	color: white;
+	border: none;
+	height: 40px;
+	border-radius: 8px;
+}
+
 #morepro {
 	margin-top: 25px;
 }
