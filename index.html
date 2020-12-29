@@ -16,6 +16,7 @@
   <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="animate.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175795017-1"></script>
@@ -26,6 +27,8 @@
 
     gtag('config', 'UA-175795017-1');
   </script>
+  <!-- Include the library. -->
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
 </head>
 
@@ -69,6 +72,9 @@
           <a class="nav-link" dest="portfolio" href="#portfolio">PORTFOLIO</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" dest="github" href="#blog">GITHUB</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" dest="blog" href="#blog">BLOG</a>
         </li>
         <li class="nav-item">
@@ -99,9 +105,10 @@
           JavaScript</h4>
       </div>
       <div class="col-md-4 col-6">
+
         <img class="logo wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"
-          src="./Assets/svg/python.svg">
-        <h4 class="skillitem wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">Python
+          src="./Assets/svg/react.svg">
+        <h4 class="skillitem wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">React
         </h4>
       </div>
       <div class="col-md-4 col-6 rightcol">
@@ -112,8 +119,8 @@
       </div>
       <div class="col-md-4 col-6 leftcol">
         <img class="logo wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"
-          src="./Assets/svg/react.svg">
-        <h4 class="skillitem wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">React
+          src="./Assets/svg/python.svg">
+        <h4 class="skillitem wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">Python
         </h4>
       </div>
       <div class="col-md-4 col-6">
@@ -268,10 +275,81 @@
   </div>
   <p class="wow animate__animated animate__flipInX" data-wow-delay="1s" id="morepro">Visit my
     <a href="https://github.com/Vishruth-S" style="color: rgb(235, 83, 145); text-decoration: underline;">Github</a>
-    for more projects</p>
+    for more projects
+  </p>
   </div>
 
+  <section id="github">
+    <div>
+      <h2 class="blog-section-head wow animate__animated animate__fadeInDown">GITHUB</h2>
+      <hr class="underline">
+      <div class="github-profile wow animate__animated animate__fadeInDown">
+        <a href="https://github.com/Vishruth-S">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=vishruth-s&show_icons=true&count_private=true&hide_rank=true&title_color=000&text_color=000&icon_color=39DD34">
+      </div>
+      </a>
+    </div>
+    <div class="container blog-container">
+      <div class="calendar wow animate__animated animate__fadeInUp">
+        Loading the data just for you.
+      </div>
+    </div>
+  </section>
   <!-- BLOG -->
+  <!-- 
+  <section id="blog">
+    <div>
+      <h2 class="blog-section-head wow animate__animated animate__fadeInDown">In the world of Competitive Coding</h2>
+      <hr class="underline">
+    </div>
+    <div class="container blog-container">
+      <div class="row blog-row">
+        <div class=" col-12 col-md-4 blog-item wow animate__animated animate__fadeIn">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="hackerrank-badge" src="Assets/img/hackerrank_badge.jpeg">
+            </div>
+            <div class="col-md-6">
+              <p>Hackerrank</p>
+              <p>6 stars in problem solving</p>
+              <button>View profile</button>
+            </div>
+          </div>
+        </div>
+        <div class=" col-12 col-md-3 blog-item wow animate__animated animate__fadeIn">
+          <img class="codewars-badge" src="https://www.codewars.com/users/VishruthS/badges/large">
+          <p>Codewars</p>
+          <button>View profile</button>
+        </div>
+        <div class=" col-12 col-md-4 blog-item wow animate__animated animate__fadeIn">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="Assets/img/codechef_badge.png">
+            </div>
+            <div class="col-md-6">
+              <p>CodeChef</p>
+              <p>6 stars in problem solving</p>
+              <button>View profile</button>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <img src="Assets/img/Blog2.png" class="blog-img">
+          <h3>Blog 1</h3>
+          <p>date</p>
+          <hr>
+          <p>Blog text</p>
+        </div> -->
+  <!-- </div>
+  </div>
+  <p class="wow animate__animated animate__flipInX" data-wow-delay="1s" id="morepro">Visit my
+    <a href="https://techknowbytez.blogspot.com/" style="color: rgb(235, 83, 145); text-decoration: underline;">blog
+    </a>to read more articles
+  </p>
+  </section> -->
+
+
 
   <section id="blog">
     <div>
@@ -315,6 +393,7 @@
       </a>to read more articles
     </p>
   </section>
+
   <section class="vshape">
   </section>
   <section class="footer" id="contact">
@@ -348,6 +427,8 @@
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
   </section>
+
+
 
   <footer>
     <button onclick="topFunction()" id="topbtn" title="Go to top"><i
@@ -497,6 +578,7 @@
       $("html, body").animate({ scrollTop: $("#" + pageId).offset().top }, 500);
     });
 
+    GitHubCalendar(".calendar", "vishruth-s", { responsive: true });
   </script>
   <noscript>
     <!-- <style type="text/css">

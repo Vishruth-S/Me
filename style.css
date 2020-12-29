@@ -53,6 +53,9 @@ a {
 	color: white;
 }
 
+.text-gray a, .text-gray a:hover {
+	color:  #e31b6d;
+}
 .icons {
 	margin-top: 15px;
 }
@@ -104,6 +107,18 @@ a {
 
 .containertype p span.cursor.typing {
 	animation: none;
+}
+
+.hackerrank-badge {
+	width: 120px;
+}
+
+.codewars-badge {
+	width: 250px;
+}
+
+.github-profile {
+	margin-bottom: 10px;
 }
 
 @keyframes blink {
@@ -171,6 +186,9 @@ a {
 		height: 250px;
 		width: 450px;
 		overflow: hidden;
+	}
+	.contrib-legend {
+		display: none !important;
 	}
 }
 
