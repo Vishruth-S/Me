@@ -65,7 +65,6 @@ a {
 	width: 240px;
 	border-radius: 200px;
 	margin-bottom: 5px;
-	box-shadow: 0px 5px 20px 9px #d6d6d6;
 }
 
 .profiletext {
@@ -586,7 +585,7 @@ a:hover {
 		width: 190px;
 		border-radius: 200px;
 		margin-bottom: 3px;
-		box-shadow: 0px 5px 20px 9px #d6d6d6;
+
 	}
 	.proimg {
 		height: 250px;
