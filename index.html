@@ -11,8 +11,10 @@
   <script src="https://kit.fontawesome.com/f9cc6eebb4.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/x-icon" href="/myFavicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="animate.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -306,50 +308,67 @@
       <h2 class="blog-section-head wow animate__animated animate__fadeInDown">COMPETITIVE CODING</h2>
       <hr class="underline">
     </div>
-    <div class="container blog-container">
-      <div class="card-deck">
-        <div class="card">
-          <div class="card-img-block">
-            <img class="card-img-top hackerrank-badge" src="./Assets/img/hackerrank_badge.jpeg" alt="Card image cap">
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Hackerrank</h4>
-            <!-- <p class="card-text">Six stars in problem solving</p> -->
-            <a href="https://www.hackerrank.com/Vishruth_S"><button
-                class="cp-btn wow animate__animated animate__bounceIn" data-wow-delay="1s">View
-                Profile</button></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img-block">
-            <img class="card-img-top codechef-badge" src="./Assets/img/codechef_badge.png" alt="Card image cap">
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">CodeChef</h4>
-            <a href="https://www.codechef.com/users/vishruth_s"><button
-                class="cp-btn wow animate__animated animate__bounceIn" data-wow-delay="1s">View
-                Profile</button></a>
-            <p class="card-text"></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="custom-container">
+            <div class="custom-card">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="custom-card-content">
+                <img class="card-img-top cp-card-img" src="./Assets/img/hackerrank_badge.jpeg" alt={item.name} />
+                <div class="card-body">
+                  <h5 class="card-title ">Hackerrank</h5>
+                  <a href="https://www.hackerrank.com/Vishruth_S"
+                    class="btn btn-primary wow animate__animated animate__bounceIn" data-wow-delay="1s">VIEW
+                    PROFILE</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img-block">
-            <img class="card-img-top codewars-badge" src="./Assets/img/codewars_badge.png" alt="Card image cap">
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Codewars</h4>
-            <a href="https://www.codewars.com/users/VishruthS/"><button
-                class="cp-btn wow animate__animated animate__bounceIn" data-wow-delay="1s">View
-                Profile</button></a>
-            <p class="card-text"> </p>
+        <div class="col-md-4">
+          <div class="custom-container">
+            <div class="custom-card">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="custom-card-content">
+                <img class="card-img-top cp-card-img" src="./Assets/img/codechef_badge.png" alt={item.name} />
+                <div class="card-body">
+                  <h5 class="card-title">Codechef</h5>
+                  <a href="https://www.codechef.com/users/vishruth_s" class="btn btn-primary " data-wow-delay="1s">VIEW
+                    PROFILE</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
+        <div class="col-md-4">
+          <div class="custom-container">
+            <div class="custom-card">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="custom-card-content">
+                <img class="card-img-top cp-card-img" src="./Assets/img/codewars_badge.png" alt={item.name} />
+                <div class="card-body">
+                  <h5 class="card-title">Codewars</h5>
+                  <a href={item.profile_link} class="btn btn-primary " data-wow-delay="1s">VIEW PROFILE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
   </section>
-
-
+  <!-- 
 
   <section id="blog">
     <div>
@@ -379,19 +398,46 @@
               can add a nice "Contact me" form so that people can connect with you easier?...</p>
           </a>
         </div>
-        <!-- <div class="col-md-4">
-          <img src="Assets/img/Blog2.png" class="blog-img">
-          <h3>Blog 1</h3>
-          <p>date</p>
-          <hr>
-          <p>Blog text</p>
-        </div> -->
       </div>
     </div>
     <p class="wow animate__animated animate__flipInX" data-wow-delay="1s" id="morepro">Visit my
       <a href="https://techknowbytez.blogspot.com/" style="color: rgb(235, 83, 145); text-decoration: underline;">blog
       </a>to read more articles
     </p>
+  </section> -->
+
+  <section id="talks">
+    <div class="mb-5">
+      <h1>Talks</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="talks-custom-card">
+              <div class="talks-custom-card-imgbox">
+                <!-- <img class="talks-custom-card-img" src="Assets/img/stlcpp.jpg" alt={talk.name} /> -->
+              </div>
+              <div class="talks-custom-card-content">
+                <button class="talks-custom-card-upbtn">Up</button>
+                <h3>Introduction to STL in C++ and Problem Solving</h3>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="talks-custom-card">
+              <div class="talks-custom-card-imgbox">
+                <!-- <img class="talks-custom-card-img" src="Assets/img/hackathons101.png" alt={talk.name} /> -->
+              </div>
+              <div class="talks-custom-card-content">
+                <button class="talks-custom-card-upbtn">Up</button>
+                <h3>Hackathons 101: The what,why and how</h3>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="vshape">
