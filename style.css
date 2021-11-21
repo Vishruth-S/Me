@@ -604,9 +604,7 @@ a:hover {
 	.contrib-legend {
 		display: none !important;
 	}
-	#comp-code {
-		height: 160vh;
-	}
+
 	.form-item {
 		width: 250px;
 		height: 40px;
@@ -864,6 +862,22 @@ a:hover {
     bottom: 0;
 }
 
-/* .talks-custom-card-upbtn {
+.talks-custom-card-upbtn {
+	display: none;
+}
 
-} */
+.web-btn-disabled {
+	background: #05c2c9;
+	margin-top: 20px;
+	color: white;
+	opacity: 0.4;
+	border: none;
+	height: 40px;
+	border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+	.talks-custom-card {
+		margin-bottom: 40px;
+	}
+}
