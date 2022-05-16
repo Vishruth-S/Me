@@ -31,7 +31,9 @@
   </script>
   <!-- Include the library. -->
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-  <meta http-equiv="refresh" content="13; url = https://www.vishruths.me " />
+
+
+  <meta http-equiv="refresh" content="11; url = https://www.vishruths.me " />
 </head>
 
 <body>
@@ -455,15 +457,16 @@
     </div>
   </section>
 
-  <!-- <section class="vshape">
-  </section> -->
+  <section class="vshape">
+  </section>
 
 
   <div class="modal" tabindex="-1" role="dialog" id="exampleModal" data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered " role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Website Deprecated</h5>
+          <h5 class="modal-title alert-danger">Website Deprecated</h5>
+          <p class="text-muted" style="font-size: 8px;">[since 16 May 2022]</p>
           <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button> -->
@@ -474,12 +477,12 @@
                 style="color: #000;">here</a></u>
           </p>
           <p>
-            You will be redirected automatically in 10 seconds
+            You will be redirected automatically in <span id="countdown"></span>seconds
           </p>
         </div>
         <div class="modal-footer">
           <a href="https://vishruths.me" style="color: #000;">
-            <button type="button" class="btn btn-primary">Continue to new website</button>
+            <button type="button" class="btn btn-success">Continue to new website</button>
           </a>
           <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
         </div>
@@ -581,6 +584,18 @@
       $("#exampleModal").modal('show');
 
     });
+
+    var timeleft = 10;
+    var downloadTimer = setInterval(function () {
+      if (timeleft <= 0) {
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "0 ";
+      } else {
+        document.getElementById("countdown").innerHTML = timeleft + " ";
+      }
+      timeleft -= 1;
+    }, 1000);
+
     new WOW().init();
     var submitted = false;
     function validateForm() {
