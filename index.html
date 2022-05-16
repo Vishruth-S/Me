@@ -31,32 +31,26 @@
   </script>
   <!-- Include the library. -->
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
+  <meta http-equiv="refresh" content="13; url = https://www.vishruths.me " />
 </head>
 
 <body>
+
   <div id="particles-js">
     <div class="main-title" id="home">
       <h1>Hi, I'm <span style="color: #00ffff">Vishruth Subramanian</span></h1>
-      <!-- <h2>Developer | Coder | Hacker</h2>  -->
-      <!-- <img class="profile" src="profile.jpg"> -->
+
       <div class="containertype">
         <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
       </div>
 
-      <!-- <div class="icons">
-          <a href="https://github.com/Vishruth-S"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/vishruth-subramanian-40737a1a1/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100006962836486"><i class="fab fa-facebook"></i></a>
-          <a href="https://twitter.com/Vishruth_S_"><i class="fab fa-twitter"></i></a>
-          <a href="http://instagram.com/vishruth_s_"><i class="fab fa-instagram"></i></a>
-          </div> -->
+
 
 
     </div>
   </div>
-  </div>
-  </div>
+  <!-- </div>
+  </div> -->
   <nav id="nav_bar" class="navbar navbar-expand-lg ">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -461,8 +455,41 @@
     </div>
   </section>
 
-  <section class="vshape">
-  </section>
+  <!-- <section class="vshape">
+  </section> -->
+
+
+  <div class="modal" tabindex="-1" role="dialog" id="exampleModal" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Website Deprecated</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body">
+          <p>
+            A newer version of this website is available <u> <a href="https://vishruths.me"
+                style="color: #000;">here</a></u>
+          </p>
+          <p>
+            You will be redirected automatically in 10 seconds
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://vishruths.me" style="color: #000;">
+            <button type="button" class="btn btn-primary">Continue to new website</button>
+          </a>
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+
   <section class="footer" id="contact">
     <div class="contact">
       <h2 class="wow animate__animated animate__slideInLeft">CONTACT</h2>
@@ -550,6 +577,10 @@
   <script src="./scripts/wow.js"></script>
 
   <script>
+    $(document).ready(function () {
+      $("#exampleModal").modal('show');
+
+    });
     new WOW().init();
     var submitted = false;
     function validateForm() {
